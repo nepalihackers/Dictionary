@@ -61,6 +61,13 @@ input[name = "search"]{
 #output > .loading{
   margin: 30px 180px;
 }
+#output > ol{
+  margin: 0px;
+  padding-left: 20px;
+}
+#output > ol > li{
+  margin: 5px 3px;
+}
 
 
 @keyframes rotate-360 {
