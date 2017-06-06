@@ -1,0 +1,2 @@
+# Dictionary
+Dictionary chrome extenction.
