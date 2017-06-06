@@ -2,4 +2,4 @@
 Dictionary chrome extenction.
 
 
-![screensot](https://drive.google.com/open?id=0B1tSBstNLjlIMFMtRUVrNFozekU)
+![screensot](https://snueqa-ch3301.files.1drv.com/y4mbELTbhsSrN2HW68HpyVvj0v3Fg7GIw9SeehpK4nc0GcX5gcOMKD3OFsjQFN2yEg2wf_xkDLUcM2PXs9NcxqN9Q24hAVV0rijoa8UiUqRW67MA6Arw0jOS3-ClxHVbMvCtpJM4CQ_2GCQCtZ8pVozyqkx_LvOpmO5LZjI04hNqGTV_p6_it3HxzOTzKu7GiJamsSdzRGemOnaIJLVAMYpqg?width=422&height=371&cropmode=none)
