@@ -1,0 +1,72 @@
+*{
+  transition: transform 0.2s ease 0s;
+}
+body{
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.title-icon{
+  display: block;
+  margin: 20px auto;
+  width: 128px;
+  opacity: 0.5;
+  height: 128px;
+}
+.title-icon:hover{
+  transform: scale(1.1);
+}
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.color-blue{
+  color: rgb(50, 75, 200);
+}
+
+.mr-side-m{
+  margin: 0px 10px;
+}
+.mr-side-l{
+  margin: 0px 20px;
+}
+
+.inputWrapper{
+  display: block;
+  width: 350px;
+  margin: 0px auto;
+}
+
+.word{
+  width: 250px;
+  display: inline;
+}
+input[name = "search"]{
+  width: 100;
+  display: inline;
+}
+
+#output{
+
+  transition: all 0.2s;
+  padding: 10px 10px;
+}
+.tips{
+  font-style: italic;
+  font-size: 0.8em;
+  color: gray;
+}
+
+#output > .loading{
+  margin: 30px 180px;
+}
+
+
+@keyframes rotate-360 {
+  0% {transform: rotate(0);}
+  5% {transform: rotate(90);}
+  10% {transform: rotate(180);}
+  15% {transform: rotate(270);}
+  20% {transform: rotate(360);}
+}
