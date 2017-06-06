@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap | test-site</title>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style-popup.css">
+  </head>
+  <body>
+    <div>
+      <img class="title-icon" src="./img/icon.png">
+      <h3 class="title-text mr-side-m center"> Dictionary <small class="color-blue">by prabin parajuli</small> </h3>
+      <hr>
+    </div>
+    <div class="inputWrapper">
+      <input class="form-control nav-form word" id="word" type="text" name='word' placeholder="Search Word">
+      <input class="btn btn-primary" id="search" type="button" name="search" value="Search">
+    </div>
+
+    <div id="output">
+    </div>
+
+    <p class="tips mr-side-m">
+      Tip: This is a work in progress chrome extenction. For more detail visit
+      our <a href="http://www.github.com/prabinzz/">repo</a> on GitHub.
+    </p>
+
+    <!-- scripts -->
+    <script src="popup.js" charset="utf-8"></script>
+    <script src="./assets/jquery.min.js" charset="utf-8"></script>
+    <script src="./assets/bootstrap.min.js" charset="utf-8"></script>
+  </body>
+</html>
