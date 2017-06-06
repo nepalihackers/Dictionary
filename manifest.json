@@ -1,6 +1,6 @@
 {
-  "name": "Name of app",
-  "description": "discription",
+  "name": "Dictionary",
+  "description": "Dictionary chrome extenction to easily search for words and their meaning",
   "manifest_version": 2,
   "version": "1.0",
 
