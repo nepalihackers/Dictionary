@@ -61,12 +61,28 @@ input[name = "search"]{
 #output > .loading{
   margin: 30px 180px;
 }
+
+#output > h1,h2,h3,h4 {
+  margin: 3px 3px;
+}
 #output > ol{
   margin: 0px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 #output > ol > li{
-  margin: 5px 3px;
+  padding: 3px 3px;
+  transition: all 0.2s ease;
+}
+#output > ol > li:hover{
+  background: #fafafa;
+}
+
+.no-bul{
+  list-style-type: none;
+}
+.no-match {
+  margin: 20px 0px;
+
 }
 
 

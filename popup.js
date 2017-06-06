@@ -15,6 +15,7 @@ btn.addEventListener("click", function(){
 
 function getMeaning(w){
   xreq = new XMLHttpRequest();
+
 		xreq.onreadystatechange = function(){
 			if (this.readyState == 4 && this.status == 200) {
        			// Typical action to be performed when the document is ready:
@@ -49,11 +50,37 @@ function dataParse(data){
       temp+="<li>"+data.tuc[0].meanings[i].text+"</li>";
     }
     temp+="</ol>";
+    temp +="<a class='center' href='http://www.dictionary.com/browse/"+data.phrase+"?s=t'>"+
+      "more>> </a>";
     output.innerHTML = temp;
+    linkInit();
 }
 
 function dataError(data){
   var temp = "";
-  temp += "<h4 class='center'> No match found for \""+data.phrase+"\"</h4>";
+  temp += "<h4 class='center no-match'> No match found for \""+data.phrase+"\"</h4>";
+  temp +="<h5> Search in: </h5><ul class='no-bul'>";
+  temp +="<a  href='http://www.dictionary.com/browse/"+data.phrase+"?s=t'>"+
+    "<li>dictionary.com</li></a>";
+  temp +="<a  href='http://www.google.com/search?q="+data.phrase+"'>"+
+    "<li>google.com</li></a>";
+
+  temp += "</ul>";
   output.innerHTML = temp;
+  linkInit();
 }
+
+function newTab(obj, add){
+  obj.addEventListener("click", function(){
+    chrome.tabs.create({"url": add});
+  })
+}
+function linkInit(){
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    newTab(links[i],links[i].href);
+  }
+}
+
+// _____________________________________________________
+linkInit();
