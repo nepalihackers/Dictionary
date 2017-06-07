@@ -20,16 +20,15 @@ Currently our extension is in development phase so, It is not available in chrom
   - Translated meaning i.e. Input in one and display output in another.
   - 50+ language supported.
 
-__**To change language and configuration.
+__**To change language and configuration.**__
 
-  STEPS:
-    - Left click on extension icon.
-    - Click on options.
-**__
+  **STEPS:**
+   - Left click on extension icon.
+   - Click on options.
 
 ### Credits
 
-  - **glosbe** API is used as a data source. (click here)[https://glosbe.com/gapi/] to visit their page.
+  - **glosbe** API is used as a data source. https://glosbe.com/gapi/ to visit their page.
   - **icon** is Designed by Freepik and distributed by Flaticon.
   - **background** of Options page is from Dark-Arc theme.
 
@@ -38,3 +37,5 @@ __**To change language and configuration.
 ![screensot](https://snueqa-ch3301.files.1drv.com/y4mbELTbhsSrN2HW68HpyVvj0v3Fg7GIw9SeehpK4nc0GcX5gcOMKD3OFsjQFN2yEg2wf_xkDLUcM2PXs9NcxqN9Q24hAVV0rijoa8UiUqRW67MA6Arw0jOS3-ClxHVbMvCtpJM4CQ_2GCQCtZ8pVozyqkx_LvOpmO5LZjI04hNqGTV_p6_it3HxzOTzKu7GiJamsSdzRGemOnaIJLVAMYpqg?width=422&height=371&cropmode=none)
 
 ![screensot2](https://5e9tpg-ch3301.files.1drv.com/y4mxkP1NrSfchLp7gnpsVWKuoIaSEhgPwUan2rBbLFHx3P0n_2NjZWwsX7taBjKb-PRCOkKiwQhOCI2A_GxvAXlW3Garozc4BmUimhDBoHVC65nnQ40CjJy7CPREV6M2uM9SwXcAO4LmGdUq7zxu38JXK77gycgBxB1qKqFB_lA-inTu8pRcgPGksOP5o5PDbf1KB60OAtwrtmVh0WBpqrhLA?width=424&height=593&cropmode=none)
+
+![Options Page](https://5equbg-ch3301.files.1drv.com/y4mdYOJjFjQdh60GmfH5PXN1xJIBJKrA16z5GkdAPY-GY7sevZ1T7b6rO5kXcuUnn8M_EmtO-8pKmta6-cTcFpKMEdkoUYvTzdyoOy7xeMaPs-Bz2w1-8InFp6EhG0xunbMawYhQ8j7bWWa97_kJ96DcKRSFqZCQPVXMadgtXnzyEdnFsapORYh89aigDJ16qZryWnRj9eQOQ5pkjL7hAWpIw?width=862&height=514&cropmode=none)
