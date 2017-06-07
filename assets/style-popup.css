@@ -93,3 +93,22 @@ input[name = "search"]{
   15% {transform: rotate(270);}
   20% {transform: rotate(360);}
 }
+
+.action{
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.action-icon{
+  transition: all 0.2s ease;
+}
+.action-icon:hover{
+  transform: scale(1.1);
+}
+.action-text{
+  margin-left: 5px;
+  padding: 0px;
+  line-height: 16px;
+}

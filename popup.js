@@ -43,19 +43,31 @@ function onLoading(){
 function dataParse(data){
   if(data == "" || data == null || data == undefined){
     dataError();
-  }
-  var temp = '';
+    return;
+  }else{
     console.log(data);
+    data_clean = getData(data);
+    console.log(data_clean);
+    var temp = '';
     temp+= "<h3>"+data.phrase+"</h3>";
     temp+="<ol>";
-    for (var i = 0; i < data.tuc[0].meanings.length && i< localStorage.limit; i++) {
-      temp+="<li>"+data.tuc[0].meanings[i].text+"</li>";
+    var appended = 0;
+    for (var i = 0; i < data_clean.length && appended< localStorage.limit; i++) {
+      if(data_clean[i].language == localStorage.toLang){
+        temp+="<li>"+data_clean[i].text+"</li>";
+        appended ++;
+      }
+    }
+    if(appended == 0){
+      dataError(data);
+      return;
     }
     temp+="</ol>";
     temp +="<a class='center' href='http://www.dictionary.com/browse/"+data.phrase+"?s=t'>"+
       "more>> </a>";
     output.innerHTML = temp;
     linkInit();
+  }
 }
 
 function dataError(data){
@@ -65,6 +77,10 @@ function dataError(data){
 
   }else{
     temp += "<h4 class='center no-match'> No match found for \""+data.phrase+"\"</h4>";
+    temp += "<ul class='reasons'>"+"<li> Word Not available in current language</li>"+
+    "<li> Given word is invalid. </li> "+
+    "<li> Server is busy.</li>"+
+    "</ul>"
     temp +="<h5> Search in: </h5><ul class='no-bul'>";
     temp +="<a  href='http://www.dictionary.com/browse/"+data.phrase+"?s=t'>"+
       "<li>dictionary.com</li></a>";
@@ -87,6 +103,18 @@ function linkInit(){
   for (var i = 0; i < links.length; i++) {
     newTab(links[i],links[i].href);
   }
+}
+
+function getData(data){
+  var temp = [];
+  for(var i = 0; i<data.tuc.length; i++){
+    if (data.tuc[i].hasOwnProperty("meanings")) {
+      for(var j= 0; j<data.tuc[i].meanings.length; j++){
+        temp.push(data.tuc[i].meanings[j]);
+      }
+    }
+  }
+  return temp;
 }
 
 // _____________________________________________________

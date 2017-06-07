@@ -4,7 +4,16 @@ var fromLang = document.getElementById('fromLang');
 var toLang = document.getElementById('toLang');
 
 var languages = [
-  new lang("English","eng"),
+  new lang("English","en"),
+  new lang("Geraman","de"),
+  new lang("Japanese","ja"),
+  new lang("French","fr"),
+  new lang("Spanish","es"),
+  new lang("Russian","ru"),
+  new lang("Chinese","zh"),
+  new lang("Polish","pl"),
+  new lang("Italian","it"),
+  new lang("Hindi","hi")
 ]
 
 document.addEventListener("DOMContentLoaded",function(){

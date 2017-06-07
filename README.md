@@ -18,7 +18,7 @@ Currently our extension is in development phase so, It is not available in chrom
   - External search available with Google and Dictionary.com.
   - Multi language selection.
   - Translated meaning i.e. Input in one and display output in another.
-  - 50+ language supported.
+  - 10+ language support.
 
 __**To change language and configuration.
 
