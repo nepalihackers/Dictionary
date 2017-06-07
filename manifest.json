@@ -1,6 +1,6 @@
 {
   "name": "Dictionary",
-  "description": "Dictionary chrome extenction to easily search for words and their meaning",
+  "description": "Dictionary (chrome extension) is an simple dictionary.",
   "manifest_version": 2,
   "version": "1.0",
   "icons": {"128":"./img/icon.png"},
@@ -9,7 +9,11 @@
     "default_icon": "./img/icon.png",
     "default_popup": "popup.html"
   },
-
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    "./img/background.jpg"
+  ],
+  "background":{"scripts": ["background.js"]},
   "permissions":[
     "tabs",
 		"activeTab",

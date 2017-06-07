@@ -59,7 +59,7 @@ input[name = "search"]{
 }
 
 #output > .loading{
-  margin: 30px 180px;
+  margin: 15px 180px;
 }
 
 #output > h1,h2,h3,h4 {

@@ -1,0 +1,33 @@
+.form{
+  max-width: 500px;
+  display: block;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.7;
+  background-color: #222;
+  margin: 0px auto;
+}
+
+body{
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.form-control{
+  margin-bottom: 20px;
+}
+.range-val{
+  padding-left: 50px;
+  text-align: left;
+}
+
+.header{
+  text-align: center;
+  color: #efefef;
+  margin-bottom: 20px;
+}
+.header > h1{
+  font-size: 45px;
+}

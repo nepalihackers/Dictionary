@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dictionary || confguration</title>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/options.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1> Options For Dictionary </h1>
+      </div>
+      <div class="form">
+        <label for="fromLang"> Input Language: </label>
+        <select class="form-control" id="fromLang" name="fromLang" >
+
+        </select>
+        <label for="toLang"> Output language:</label>
+        <select id="toLang" class="form-control" name="fromLang">
+
+        </select>
+        <label for="limit">Maximum number of result:<span class="range-val"></span></label>
+         <input type="range" class="form-control" id="limit" name="limit" min="2" max="10">
+         <span class="range-val"></span>
+      </div>
+
+    </div>
+    <!-- Scripts -->
+    <script src="options.js" charset="utf-8"></script>
+    <script src="./assets/jquery.min.js" charset="utf-8"></script>
+    <script src="./assets/bootstrap.min.js" charset="utf-8"></script>
+  </body>
+</html>
