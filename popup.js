@@ -1,5 +1,15 @@
 // var btn = document.getElementById('search');
 
+if (localStorage.fromLang == undefined || "undefined") {
+  localStorage.fromLang = "en";
+}
+if (localStorage.dstLang == undefined || "undefined") {
+  localStorage.dstLang = 'en';
+}
+if (localStorage.limit == undefined || "undefined"){
+  localStorage.limit = 5;
+}
+
 var default_out = "<p class=\"tips mr-side-m\">Tip: This is a work in progress chrome extenction. For more detail visit our <a href=\"http://www.github.com/prabinzz/\">repo</a> on GitHub.</p>"
 var btn = document.getElementById("search");
 btn.addEventListener("click", function(){
@@ -52,16 +62,16 @@ function dataParse(data){
     temp+= "<h3>"+data.phrase+"</h3>";
     temp+="<ol>";
     var appended = 0;
-    for (var i = 0; i < data_clean.length && appended< localStorage.limit; i++) {
+    for (var i = 0; i < data_clean.length && appended < localStorage.limit; i++) {
       if(data_clean[i].language == localStorage.toLang){
         temp+="<li>"+data_clean[i].text+"</li>";
         appended ++;
       }
     }
-    if(appended == 0){
-      dataError(data);
-      return;
-    }
+    // if(appended == 0){
+    //   dataError(data);
+    //   return;
+    // }
     temp+="</ol>";
     temp +="<a class='center' href='http://www.dictionary.com/browse/"+data.phrase+"?s=t'>"+
       "more>> </a>";
@@ -77,10 +87,10 @@ function dataError(data){
 
   }else{
     temp += "<h4 class='center no-match'> No match found for \""+data.phrase+"\"</h4>";
-    temp += "<ul class='reasons'>"+"<li> Word Not available in current language</li>"+
-    "<li> Given word is invalid. </li> "+
-    "<li> Server is busy.</li>"+
-    "</ul>"
+    temp += "<ul class='reasons'>"+"<li> Word Not available in current language</li>"
+    +"<li> Given word is invalid. </li> "+
+    "<li> Server is busy.</li>"
+    +"</ul>"
     temp +="<h5> Search in: </h5><ul class='no-bul'>";
     temp +="<a  href='http://www.dictionary.com/browse/"+data.phrase+"?s=t'>"+
       "<li>dictionary.com</li></a>";
