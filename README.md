@@ -8,7 +8,7 @@ Currently our extension is in development phase so, It is not available in chrom
   1. Either get zip file and extract the folder  or clone this repo.
   2. Open chrome and navigate to _Options>More tools>extensions_ or go to _chrome://extensions_ form URL.
   3. Active *developer mode* by clicking  developer mode checkbox. If you are already in developer mode ignore this step.
-  4. Click on load unpacked extensions and navigate to the folder you cloned or unziped in first step.
+  4. Click on load unpacked extensions and navigate to the folder you cloned or extracted in first step.
   5. If configured properly, you will see new dictionary like icon on the top right corner of you chrome.
 
 ### Features
@@ -16,13 +16,13 @@ Currently our extension is in development phase so, It is not available in chrom
   - XHTTP request is used to fetch data from server, Which means less data usage and quick load.
   - Simple yet sweet bootstrap UI.
   - External search available with Google and Dictionary.com.
-  - Multi language selection .
-  - Translated meaning i.e. Input in one and display output in other language.
+  - Multi language selection.
+  - Translated meaning i.e. Input in one and display output in another.
   - 50+ language supported.
 
-__**Left click extension icon and then options to change configuration of extension..
+__**To change language and configuration.
 
-  REMEMBER:
+  STEPS:
     - Left click on extension icon.
     - Click on options.
 **__
@@ -30,8 +30,8 @@ __**Left click extension icon and then options to change configuration of extens
 ### Credits
 
   - **glosbe** API is used as a data source. (click here)[https://glosbe.com/gapi/] to visit their page.
-  - **icon** is Designed by Freepik and distributed by Flaticon
-  - **background** of Options page is from Datk-Arc theme.
+  - **icon** is Designed by Freepik and distributed by Flaticon.
+  - **background** of Options page is from Dark-Arc theme.
 
 ## screensot
 
