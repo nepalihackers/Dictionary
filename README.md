@@ -33,6 +33,6 @@ __**To change language and configuration.**__
 
 ### Credits
 
-  - **glosbe** API is used as a data source. https://glosbe.com/gapi/ to visit their page.
-  - **icon** is Designed by Freepik and distributed by Flaticon.
-  - **background** of Options page is from Dark-Arc theme.
+  - [**Glosbe** API](https://glosbe.com/gapi/) is used as a data source.
+  - **Icon** is designed by Freepik and distributed by Flaticon.
+  - **Background** of options page is from Dark-Arc theme.
