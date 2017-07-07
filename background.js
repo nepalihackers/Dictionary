@@ -1,11 +1,11 @@
 
 //// init
-  if (localStorage.fromLang == undefined ? "undefined") {
+  if (localStorage.fromLang == undefined || "undefined") {
     localStorage.fromLang = "en";
   }
-  if (localStorage.dstLang == undefined ? "undefined") {
+  if (localStorage.dstLang == undefined || "undefined") {
     localStorage.dstLang = 'en';
   }
-  if (localStorage.limit == undefined ? "undefined"){
+  if (localStorage.limit == undefined || "undefined"){
     localStorage.limit = 5;
   }
